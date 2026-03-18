@@ -1,6 +1,6 @@
 # Sherpa Prototypes
 
-Prototype scripts for wearable heart rate broadcasting to multiple audience devices.
+Prototype scripts for wearable heart rate broadcasting to multiple "audience" devices.
 
 ## System Overview
 
