@@ -4,16 +4,20 @@
 #include <NimBLEDevice.h>
 #include <WiFi.h>
 #include <WiFiUDP.h>
-#include <OSCMessage.h>
+
+// enable in case you want to send OSC directly from the M5, 
+// but currently commented out since we're using ESP-NOW for broadcasting instead
+// #include <OSCMessage.h> 
+
 #include <esp_now.h>
 
 
 const char* WIFI_SSID     = "A101ZTa-7DD8A9"; // Your WiFi SSID
 const char* WIFI_PASSWORD = "0089656a";
-const char* HR_DEVICE_NAME = "TICKR";
+const char* HR_DEVICE_NAME = "Polar";
 
-const char* OSC_HOST = "10.55.248.224"; // OSC destination IP
-const int   OSC_PORT = 8000;            // OSC destination port
+// const char* OSC_HOST = "10.55.248.224"; // OSC destination IP
+// const int   OSC_PORT = 8000;            // OSC destination port
 
 static uint32_t lastBatteryCheck = 0;
 
